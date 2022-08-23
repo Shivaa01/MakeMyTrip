@@ -1,0 +1,354 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3342600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "user search a flight using valid search details",
+        "description": "",
+        "id": "testing-booking-functionality-in-the-makemytrip-application;user-search-a-flight-using-valid-search-details",
+        "after": [
+          {
+            "result": {
+              "duration": 705795000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22940492900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User launch the application",
+            "match": {
+              "location": "Search_Flight_StepDefinition.user_launch_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15522555600,
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"chNavIcon appendBottom2 chSprite chFlights active\"\u003e\u003c/span\u003e is not clickable at point (239, 115). Other element would receive the click: \u003cdiv data-cy\u003d\"outsideModal\" class\u003d\"loginModal displayBlock modalLogin dynHeight personal\"\u003e\u003c/div\u003e\n  (Session info: chrome\u003d104.0.5112.102)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-894E7L2\u0027, ip: \u0027192.168.29.120\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\\Users\\Karthiga\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:56121}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5ffbae20ae7d1c29287001fe0b8b62bc\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat com.makemytrip.pom.HomePage.selectFlightsMenu(HomePage.java:97)\r\n\tat com.makemytrip.stepdefinition.Search_Flight_StepDefinition.user_selects_the_flight_option_to_travel(Search_Flight_StepDefinition.java:42)\r\n\tat ✽.When User selects the flight option to travel(src/test/resource/com/makemytrip/feature/BookAFlight.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User selects the flight option to travel",
+            "match": {
+              "location": "Search_Flight_StepDefinition.user_selects_the_flight_option_to_travel()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User checks on round trip as option",
+            "match": {
+              "location": "Search_Flight_StepDefinition.user_checks_on_round_trip_as_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User enter \"Chennai, India\" as source city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chennai, India",
+                  "offset": 12
+                }
+              ],
+              "location": "Search_Flight_StepDefinition.user_enter_as_source_city(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User enter \"Delhi, India\" as destination city",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Delhi, India",
+                  "offset": 12
+                }
+              ],
+              "location": "Search_Flight_StepDefinition.user_enter_as_destination_city(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User enter the departure date",
+            "match": {
+              "location": "Search_Flight_StepDefinition.user_enter_the_departure_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User enter the return date",
+            "match": {
+              "location": "Search_Flight_StepDefinition.user_enter_the_Return_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User click on the search button",
+            "match": {
+              "location": "Search_Flight_StepDefinition.user_click_on_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User navigates to Flight details page",
+            "match": {
+              "location": "Search_Flight_StepDefinition.user_navigates_to_Flight_details_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 174600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "User filter the flights that has the lowest price and minimul travelling time",
+        "description": "",
+        "id": "testing-booking-functionality-in-the-makemytrip-application;user-filter-the-flights-that-has-the-lowest-price-and-minimul-travelling-time",
+        "after": [
+          {
+            "result": {
+              "duration": 1345263000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22276900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user view number of flights with unordered",
+            "match": {
+              "location": "Lowest_Fastest_Selection_StepDefinition.user_view_number_of_flights_with_unordered()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2014609700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User filter the low to high option from the drop down",
+            "match": {
+              "location": "Lowest_Fastest_Selection_StepDefinition.user_filter_the_low_to_high_option_from_the_drop_down()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30158204000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User counts the number of flights in the filtered list",
+            "match": {
+              "location": "Lowest_Fastest_Selection_StepDefinition.user_counts_the_number_of_flights_in_the_filtered_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30083202900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User retrieves price details from each flight",
+            "match": {
+              "location": "Lowest_Fastest_Selection_StepDefinition.user_retrieves_price_details_from_each_fligh()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30088642000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User select the fastest flight from the filtered list",
+            "match": {
+              "location": "Lowest_Fastest_Selection_StepDefinition.user_select_the_fastest_flight_from_the_filtered_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30160158300,
+              "error_message": "java.lang.NumberFormatException: null\r\n\tat java.lang.Integer.parseInt(Unknown Source)\r\n\tat java.lang.Integer.parseInt(Unknown Source)\r\n\tat com.makemytrip.stepdefinition.Lowest_Fastest_Selection_StepDefinition.user_select_the_evening_flight_if_duplicate_set_of_lowest_price_and_fastest_flight(Lowest_Fastest_Selection_StepDefinition.java:104)\r\n\tat ✽.And User select the evening flight if duplicate set of lowest price and fastest flight(src/test/resource/com/makemytrip/feature/BookAFlight.feature:20)\r\n",
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "User select the evening flight if duplicate set of lowest price and fastest flight",
+            "match": {
+              "location": "Lowest_Fastest_Selection_StepDefinition.user_select_the_evening_flight_if_duplicate_set_of_lowest_price_and_fastest_flight()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User verifies that the selected option is lowest and fastest",
+            "match": {
+              "location": "Lowest_Fastest_Selection_StepDefinition.user_verifies_that_the_selected_option_is_lowest_and_fastest()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 235300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "User select the flight the lowest price, fastest and book the same",
+        "description": "",
+        "id": "testing-booking-functionality-in-the-makemytrip-application;user-select-the-flight-the-lowest-price,-fastest-and-book-the-same",
+        "after": [
+          {
+            "result": {
+              "duration": 887644700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7113100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User view the info of the selected flight",
+            "match": {
+              "location": "Booking_Flight_StepDefinition.user_view_the_selected_flight()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 34126744100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User click on radio button of selected flight",
+            "match": {
+              "location": "Booking_Flight_StepDefinition.user_click_on_radio_button_of_selected_flight()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30121300900,
+              "error_message": "java.lang.Exception: Unable to book\r\n\tat com.makemytrip.stepdefinition.Booking_Flight_StepDefinition.user_click_on_Book_button_for_booking_the_same_flight(Booking_Flight_StepDefinition.java:82)\r\n\tat ✽.And User click on Book button for booking the same flight(src/test/resource/com/makemytrip/feature/BookAFlight.feature:26)\r\n",
+              "status": "failed"
+            },
+            "line": 26,
+            "name": "User click on Book button for booking the same flight",
+            "match": {
+              "location": "Booking_Flight_StepDefinition.user_click_on_Book_button_for_booking_the_same_flight()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "User verifies the booking details",
+            "match": {
+              "location": "Booking_Flight_StepDefinition.user_verifies_the_booking_details()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Testing booking functionality in the makemytrip application",
+    "description": "",
+    "id": "testing-booking-functionality-in-the-makemytrip-application",
+    "keyword": "Feature",
+    "uri": "src/test/resource/com/makemytrip/feature/BookAFlight.feature"
+  }
+]
